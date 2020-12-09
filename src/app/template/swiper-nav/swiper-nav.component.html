@@ -1,0 +1,12 @@
+<p>swiper-nav works!</p>
+<div class="afp-tab-box">
+  <div class="afp-tab">
+      <swiper class="nav-tabs-box swiper-container" [config]="swiperOption">
+          <ul id="nav-tab-member" class="swiper-wrapper nav nav-tabs" role="tablist">
+              <li class="swiper-slide" role="presentation" *ngFor="let itemtab of slidestab; let i=index" [attr.data-history]="i">
+                  <a [routerLink]="[itemtab]" routerLinkActive="active" class="tablist-link show">{{itemtab}}</a>
+              </li>
+          </ul>
+      </swiper>
+  </div>
+</div>

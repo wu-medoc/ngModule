@@ -1,0 +1,14 @@
+<p>swiper works!</p>
+<!-- Swiper -->
+<swiper class="swiper-container" [config]="swiperOptionBn">
+  <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let item of slides; let i=index">
+        <img [src]="item" alt="">
+      </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>

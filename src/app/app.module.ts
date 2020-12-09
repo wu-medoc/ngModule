@@ -1,3 +1,4 @@
+import { TemplateModule } from './template/template.module';
 import { FunctionModule } from './function/function.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,13 +13,14 @@ import { ExploreMapComponent } from './explore/explore-map/explore-map.component
   declarations: [
     AppComponent,
     EntranceComponent,
-    ExploreMapComponent,
+    ExploreMapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FunctionModule
+    FunctionModule,
+    TemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
