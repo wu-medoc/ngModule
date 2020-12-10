@@ -4,8 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', component: EntranceComponent
-  }
+    path: '', component: EntranceComponent, data: { preload: true },
+    children: [
+      { path: ':id', component: EntranceComponent },
+    ]
+  },
 ];
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Swiper } from 'swiper';
+import { explorePath } from '../explore-path';
 
 @Component({
   selector: 'app-explore-map',
@@ -7,12 +8,7 @@ import { Swiper } from 'swiper';
   styleUrls: ['./explore-map.component.css']
 })
 export class ExploreMapComponent implements OnInit, AfterViewInit {
-  slidestabData = [
-    'ExploreMap',
-    'ExploreDetail',
-    'ExploreList',
-    'DeliveryInfo'
-  ];
+  slidestabData = explorePath;
   swiperOptionData = {
     slidesPerView: 3,
     breakpoints: {
@@ -28,10 +24,13 @@ export class ExploreMapComponent implements OnInit, AfterViewInit {
   };
 
   constructor() { }
+  // tslint:disable-next-line: typedef
   ngAfterViewInit() {
   }
 
+  // tslint:disable-next-line: typedef
   ngOnInit() {
   }
 
 }
+

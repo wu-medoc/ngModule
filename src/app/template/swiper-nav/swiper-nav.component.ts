@@ -8,8 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SwiperNavComponent implements OnInit {
   @Input() slidestab: string;
   @Input() swiperOption: string;
-  constructor() { }
+  public headingPage = '';
 
+  /** 判斷routerLinkActive 預設0 */
+  public idxNav = 0;
+  // tslint:disable-next-line: typedef
+  clickEvent(i) {
+    this.idxNav = i;
+  }
+
+  constructor() { }
   ngOnInit(): void {
   }
 
