@@ -69,11 +69,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
+    // { path: '', redirectTo: '/Home', pathMatch: 'full' },
     {
         path: '', component: _entrance_component__WEBPACK_IMPORTED_MODULE_0__["EntranceComponent"], data: { preload: true },
-        children: [
-            { path: ':id', component: _entrance_component__WEBPACK_IMPORTED_MODULE_0__["EntranceComponent"] },
-        ]
+        children: [{ path: ':id', component: _entrance_component__WEBPACK_IMPORTED_MODULE_0__["EntranceComponent"] }]
     },
 ];
 class EntranceRoutingModule {

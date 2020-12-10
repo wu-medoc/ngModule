@@ -83,7 +83,7 @@ const explorePath = [
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "appPath", function() { return appPath; });
 const appPath = [
-    { title: 'Home', path: '/Home' },
+    { title: 'Home', path: '/Home/1' },
     { title: 'Travel', path: '/Travel' },
     { title: 'Explore', path: '/Explore' }
 ];
@@ -776,17 +776,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _function_error404_error404_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./function/error404/error404.component */ "zvxH");
+
 
 
 
 
 const routes = [
-    { path: '', redirectTo: 'Home', pathMatch: 'full' },
+    { path: '', redirectTo: '/Home', pathMatch: 'full' },
     { path: 'Home', loadChildren: () => __webpack_require__.e(/*! import() | entrance-entrance-module */ "entrance-entrance-module").then(__webpack_require__.bind(null, /*! ./entrance/entrance.module */ "2t8/")).then(m => m.EntranceModule) },
     { path: 'Explore', loadChildren: () => __webpack_require__.e(/*! import() | explore-explore-module */ "explore-explore-module").then(__webpack_require__.bind(null, /*! ./explore/explore.module */ "vwuq")).then(m => m.ExploreModule) },
     { path: 'Function', loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./function/function.module */ "dVhO")).then(m => m.FunctionModule) },
     { path: 'Travel', loadChildren: () => __webpack_require__.e(/*! import() | travel-travel-module */ "travel-travel-module").then(__webpack_require__.bind(null, /*! ./travel/travel.module */ "ydd2")).then(m => m.TravelModule) },
     { path: 'Template', loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./template/template.module */ "fo52")).then(m => m.TemplateModule) },
+    { path: '**', component: _function_error404_error404_component__WEBPACK_IMPORTED_MODULE_2__["Error404Component"] },
 ];
 class AppRoutingModule {
 }
