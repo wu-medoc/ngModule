@@ -5,7 +5,7 @@ export interface appPath {
 }
 
 export const appPath = [
-  { title: 'Home', path: '/Home' },
+  { title: 'Home', path: '/Home/1' },
   { title: 'Travel', path: '/Travel' },
   { title: 'Explore', path: '/Explore' }
 ];
