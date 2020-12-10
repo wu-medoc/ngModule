@@ -360,7 +360,7 @@ class EntranceComponent {
     }
 }
 EntranceComponent.ɵfac = function EntranceComponent_Factory(t) { return new (t || EntranceComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"])); };
-EntranceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: EntranceComponent, selectors: [["app-entrance"]], decls: 7, vars: 5, consts: [["src", "/assets/img/AppImg.png", "alt", "Root", 1, "img-fluid"], [3, "swiperOptionBn"], [3, "slidestab", "swiperOption"]], template: function EntranceComponent_Template(rf, ctx) { if (rf & 1) {
+EntranceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: EntranceComponent, selectors: [["app-entrance"]], decls: 7, vars: 5, consts: [["src", "https://wu-medoc.github.io/ngModule/assets/img/AppImg.png", "alt", "Root", 1, "img-fluid"], [3, "swiperOptionBn"], [3, "slidestab", "swiperOption"]], template: function EntranceComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "[entrance.module] entrance works!");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
